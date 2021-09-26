@@ -3,10 +3,10 @@ kind: DistributedRedisCluster
 metadata:
   annotations:
     # if your operator run as cluster-scoped, add this annotations
-    redis.kun/scope: cluster-scoped
+    # redis.kun/scope: cluster-scoped
   name: example-distributedrediscluster
 spec:
   # Add fields here
   masterSize: 3
   clusterReplicas: 1
-  image: redis:5.0.4-alpine
+  image: registry.cn-beijing.aliyuncs.com/dotbalo/redis:5.0.4-alpine
